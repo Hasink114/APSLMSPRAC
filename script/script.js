@@ -9,4 +9,4 @@
 });
 */
 
-alert("New Practice paper will be uploaded before 3 days of next paper.");
+alert("New Practice paper is uploaded.");
