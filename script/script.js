@@ -1,5 +1,7 @@
-const jsonDataStringID = localStorage.getItem("jsonUserID");
-const jsonUserID = JSON.parse(jsonDataStringID);
+const urlParams = new URLSearchParams(window.location.search);
+const encodedResponse = urlParams.get('response');
+const decodedResponse = JSON.parse(decodeURIComponent(encodedResponse));
 
-console.log(jsonUserID);
+// Use the decoded response
+console.log(decodedResponse);
 alert("New Practice paper is uploaded.");
